@@ -17,11 +17,7 @@ from enum import Enum
 import numpy as np
 warnings.filterwarnings("ignore")
 
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-from torch_geometric.data import Data, Batch
-from torch_geometric.nn import GATConv, global_mean_pool, global_max_pool, global_add_pool
+
 
 import streamlit as st
 import networkx as nx

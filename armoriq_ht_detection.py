@@ -18,7 +18,7 @@ import numpy as np
 warnings.filterwarnings("ignore")
 import streamlit as st
 import pandas as pd
-from scipy import stats
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # STREAMLIT CONFIG

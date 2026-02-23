@@ -465,7 +465,7 @@ TRADITIONAL_TROJAN_TYPES = {
 # ─────────────────────────────────────────────────────────────────────────────
 # DATA STRUCTURES
 # ─────────────────────────────────────────────────────────────────────────────
-@dataclass
+
 class VerilogSignal:
     name: str
     signal_type: str
@@ -476,7 +476,7 @@ class VerilogSignal:
     fanout: int = 0
     toggle_rate: float = 0.0
 
-@dataclass
+
 class VerilogModule:
     name: str
     signals: Dict[str, VerilogSignal]
@@ -485,7 +485,6 @@ class VerilogModule:
     instances: List[str] = field(default_factory=list)
     parameters: Dict[str, str] = field(default_factory=dict)
 
-@dataclass
 class AgentMessage:
     agent_id: str
     agent_name: str
@@ -494,7 +493,7 @@ class AgentMessage:
     content: str
     data: Any = None
 
-@dataclass
+
 class MCPServer:
     server_id: str
     name: str
